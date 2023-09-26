@@ -22,7 +22,7 @@ def is_palindrome(phrase):
         True
     """
 
-    stripped_whitespace_phrase = phrase.replace(" ","")
-    lowercase_phrase = stripped_whitespace_phrase.lower()
-    return lowercase_phrase == lowercase_phrase[::-1]
+    formated_phrase = phrase.replace(" ","").lower()
+
+    return formated_phrase == formated_phrase[::-1]
 

@@ -10,8 +10,6 @@ def multiple_letter_count(phrase):
 
     letter_count = {}
     for ltr in phrase:
-        count = phrase.count(ltr)
-        letter_count[ltr] = count
+        letter_count[ltr] = letter_count.get(ltr, 0) + 1
 
     return letter_count
-#TODO: use .get instead for o(n)
