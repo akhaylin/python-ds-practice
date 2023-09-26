@@ -19,11 +19,17 @@ def mode(nums):
     for num in nums:
         count[num] = count.get(num, 0) + 1
 
+    max_value = max(count.values())
+    for key in count:
+        if count[key] == max_value:
+            return key
+
+
     #get max of count values
     #loop through count keys
     #check count[key] equal max
 
-    return max(nums, key=nums.count)
+    # return max(nums, key=nums.count)
 
     # highest_count = 0
     # highest_num = None
